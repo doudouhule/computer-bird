@@ -1,0 +1,25 @@
+{
+  "name": "grouchy-pet",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "sim": "tsc -p tsconfig.ssr.json && node tools/sim.cjs",
+    "bird": "tsc -p tsconfig.ssr.json && node tools/preview.cjs",
+    "check": "tsc -p tsconfig.ssr.json && node tools/ssr-check.cjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
